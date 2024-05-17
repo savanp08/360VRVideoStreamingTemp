@@ -1,0 +1,1 @@
+web : cd Server && cd nodeserver && npm install && npm start
