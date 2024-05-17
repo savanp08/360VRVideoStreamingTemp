@@ -1,0 +1,12 @@
+{
+  "name": "workproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/Server/nodeserver/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildAndStart": "cd Server/nodeserver && npm install && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
