@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>360 VR Video Player</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <script src="https://unpkg.com/videojs-vr/dist/videojs-vr.min.js"></script>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #vr-video-player {
+            width: 600px;
+            height: 330px;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video id="vr-video-player" class="video-js vjs-default-skin" controls playsinline>
+            <source src="https://a360-vr-video-streaming-7540c67a421c.herokuapp.com/m4s_Dash/Manifest.mpd" type="application/dash+xml">
+        </video>
+    </div>
+
+    <script>
+        (function(window, videojs) {
+            var player = window.player = videojs('vr-video-player');
+            player.mediainfo = player.mediainfo || {};
+            player.mediainfo.projection = '360';
+            player.ready(function() {
+                this.vr({
+                    projection: 'AUTO', 
+                    debug: true,
+                    forceCardboard: false, // Enable WebXR support
+                    webVREnabled: true // Enable WebXR support
+                });
+            });
+
+            // Initialize DASH playback
+            player.src({
+                src: 'https://a360-vr-video-streaming-7540c67a421c.herokuapp.com/m4s_Dash/Manifest.mpd',
+                type: 'application/dash+xml'
+            });
+        })(window, window.videojs);
+    </script>
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>360 VR Video Player</title>
+    <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+    <script src="https://unpkg.com/videojs-vr/dist/videojs-vr.min.js"></script>
+</head>
+<body>
+    <h1>360 VR Video Streaming</h1>
+    <video id="vr-video-player" class="video-js vjs-default-skin" controls playsinline width="640" height="360">
+        <source src="../../video_processing/simpleDash/manifest.mpd" type="application/dash+xml">
+    </video>
+
+    <script>
+        var player = videojs('vr-video-player');
+        player.mediainfo = player.mediainfo || {};
+        player.mediainfo.projection = '360';
+        player.ready(function() {
+            this.vr({projection: 'AUTO', debug: true});
+        });
+        // Initialize DASH playback
+        player.src({
+            src: '../../video_processing/simpleDash/video_3840x2160_8000k.mpd',
+            type: 'application/dash+xml'
+        });
+    </script>
+</body>
+</html> -->
