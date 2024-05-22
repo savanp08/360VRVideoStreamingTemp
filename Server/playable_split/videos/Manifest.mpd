@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" minBufferTime="PT5.000S" maxSegmentDuration="PT2.005S" availabilityStartTime="2016-01-20T21:10:02Z" mediaPresentationDuration="PT193.680S">
+  <Period id="period0">
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="4096" maxHeight="2048" maxFrameRate="30000/1001" par="1:1">
+      <SegmentTemplate timescale="90000" initialization="$RepresentationID$/Header.mp4" media="$RepresentationID$/$Number$.mp4" startNumber="1" duration="359408" presentationTimeOffset="0"/>
+      <Representation id="video1" bandwidth="15473530" codecs="avc1.4D401E" width="4096" height="2048" frameRate="15334084/1" sar="1:1" scanType="progressive"/>
+      <Representation id="video2" bandwidth="8799294" codecs="avc1.4D401E" width="3276" height="1638" frameRate="8659828/1" sar="1:1" scanType="progressive"/>
+      <Representation id="video3" bandwidth="5252098" codecs="avc1.4D401E" width="2458" height="1228" frameRate="5112624/1" sar="1:1" scanType="progressive"/>
+      <Representation id="video4" bandwidth="3924806" codecs="avc1.4D401E" width="2048" height="1024" frameRate="3785326/1" sar="1:1" scanType="progressive"/>
+      <Representation id="video5" bandwidth="2464746" codecs="avc1.4D401E" width="1638" height="820" frameRate="2325272/1" sar="1:1" scanType="progressive"/>
+      <Representation id="video6" bandwidth="1072530" codecs="avc1.4D401E" width="1024" height="512" frameRate="933086/1" sar="1:1" scanType="progressive"/>
+      <Representation id="video7" bandwidth="757320" codecs="avc1.4D401E" width="820" height="410" frameRate="617954/1" sar="1:1" scanType="progressive"/>
+    </AdaptationSet>
+  </Period>
+</MPD>
