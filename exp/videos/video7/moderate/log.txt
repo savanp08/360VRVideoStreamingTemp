@@ -1,0 +1,19 @@
+Quality: moderate
+Bitrates for each segment (kbps):
+2308 kbps
+1721 kbps
+314 kbps
+3143 kbps
+4142 kbps
+2935 kbps
+1099 kbps
+3233 kbps
+809 kbps
+293 kbps
+1955 kbps
+1243 kbps
+1804 kbps
+1910 kbps
+3156 kbps
+4368 kbps
+Average bitrate achieved: 2152.0625 kbps

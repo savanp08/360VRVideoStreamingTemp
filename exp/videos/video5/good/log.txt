@@ -1,0 +1,20 @@
+Quality: good
+Bitrates for each segment (kbps):
+2991 kbps
+676 kbps
+2197 kbps
+1454 kbps
+2194 kbps
+278 kbps
+3991 kbps
+2226 kbps
+3001 kbps
+2978 kbps
+4043 kbps
+2941 kbps
+4051 kbps
+4095 kbps
+4094 kbps
+4031 kbps
+4131 kbps
+Average bitrate achieved: 2904.235294117647 kbps

@@ -1,0 +1,19 @@
+Quality: low
+Bitrates for each segment (kbps):
+932 kbps
+614 kbps
+247 kbps
+957 kbps
+232 kbps
+1163 kbps
+1452 kbps
+231 kbps
+236 kbps
+1968 kbps
+945 kbps
+242 kbps
+956 kbps
+946 kbps
+602 kbps
+598 kbps
+Average bitrate achieved: 770.0625 kbps

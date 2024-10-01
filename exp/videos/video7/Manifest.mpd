@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="static" minBufferTime="PT5.000S" maxSegmentDuration="PT2.005S" availabilityStartTime="2024-07-15T00:00:00Z" mediaPresentationDuration="PT193.680S">
+  <Period id="period0">
+    <AdaptationSet mimeType="video/mp4" segmentAlignment="true" startWithSAP="1" maxWidth="4096" maxHeight="2048" maxFrameRate="30" par="1:1">
+      
+      <SegmentTemplate timescale="90000" initialization="$RepresentationID$/Header.mp4" media="$RepresentationID$/$Number$.mp4" startNumber="1" duration="359408" presentationTimeOffset="0"/>
+    
+      
+      <Representation id="good" bandwidth="3282000" codecs="avc1.4D401E" width="960" height="540" frameRate="30" sar="1:1" scanType="progressive"/>
+    
+      <Representation id="moderate" bandwidth="2152000" codecs="avc1.4D401E" width="960" height="540" frameRate="30" sar="1:1" scanType="progressive"/>
+    
+      <Representation id="low" bandwidth="958000" codecs="avc1.4D401E" width="480" height="270" frameRate="30" sar="1:1" scanType="progressive"/>
+    
+    </AdaptationSet>
+  </Period>
+</MPD>
+    
